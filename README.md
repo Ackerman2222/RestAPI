@@ -20,6 +20,7 @@ Update the spring.datasource.url, spring.datasource.username, and spring.datasou
 
 **Run the Application:**
 ./mvnw spring-boot:run
+
 The application will start at http://localhost:8080
 
 To seed the database with mock data, we can use the following endpoint:
@@ -31,7 +32,7 @@ curl -X POST http://localhost:8080/api/books/seed
 Endpoint: GET /api/books
 Description: Retrieve a list of all books in the library.
 
-Response:
+**Response:**
 Success (200 OK):
 ```bash
 [
@@ -69,14 +70,17 @@ Success (200 OK):
   // ... other books
 ]
 ```
+
 Not Found (404 Not Found):
+```bash
 "No books found"
+```
 
 **2. Add a New Book**
 Endpoint: POST /api/books
 Description: Add a new book to the library.
 
-Request:
+**Request:**
 ```bash
 {
   "title": "The Catcher in the Rye",
@@ -85,6 +89,7 @@ Request:
   "genre": "Coming-of-age"
 }
 ```
+
 **Response:** Success (200 OK):
 ```bash
 "Book details added successfully"
@@ -93,6 +98,7 @@ Request:
 **3. Update a Book by ID**
 Endpoint: PUT /api/books/{id}
 Description: Update the details of a specific book.
+
 **Request:**
 ```bash
 {
@@ -102,6 +108,7 @@ Description: Update the details of a specific book.
   "genre": "Updated Genre"
 }
 ```
+
 **Response:**
 Success (200 OK):
 ```bash

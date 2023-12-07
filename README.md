@@ -86,7 +86,7 @@ Description: Add a new book to the library.
 **Request:**
 ```bash
 {
-  "title": "The Catcher in the Rye",
+  "title": "The Catcher",
   "author": "J.D. Salinger",
   "publicationYear": "1951-07-16",
   "genre": "Coming-of-age"

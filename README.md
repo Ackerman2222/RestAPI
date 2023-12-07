@@ -66,8 +66,6 @@ Success (200 OK):
   },
   // ... other books
 ]
-  // ... other books
-]
 ```
 Not Found (404 Not Found):
 "No books found"
@@ -76,32 +74,34 @@ Not Found (404 Not Found):
 Endpoint: POST /api/books
 Description: Add a new book to the library.
 Request:
-
+```bash
 {
   "title": "The Catcher in the Rye",
   "author": "J.D. Salinger",
   "publicationYear": "1951-07-16",
   "genre": "Coming-of-age"
 }
-
-Response: Success (200 OK):
+```
+**Response:** Success (200 OK):
+```bash
 "Book details added successfully"
+```
 
 3. Update a Book by ID
 Endpoint: PUT /api/books/{id}
 Description: Update the details of a specific book.
-Request:
-
+**Request:**
+```bash
 {
   "title": "Updated Title",
   "author": "Updated Author",
   "publicationYear": "2000-01-01",
   "genre": "Updated Genre"
 }
-
-Response:
+```
+**Response:**
 Success (200 OK):
-
+```bash
 {
   "id": 1,
   "title": "Updated Title",
@@ -109,13 +109,16 @@ Success (200 OK):
   "publicationYear": "2000-01-01",
   "genre": "Updated Genre"
 }
-
-Not Found (404 Not Found):
+```
+**Not Found (404 Not Found):**
+```bash
 "Book not found"
+```
 
 4. Seed Database with Mock Data
 Endpoint: POST /api/books/seed
 Description: Populate the database with sample book entries.
-Response:
+**Response:**
+```bash
 "Mock data seeded successfully"
-
+```

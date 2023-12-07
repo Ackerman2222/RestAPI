@@ -16,6 +16,7 @@ This is a simple Library Management System API implemented using Spring Boot and
 
 **Configure Database:**
 Open src/main/resources/application.properties.
+
 Update the spring.datasource.url, spring.datasource.username, and spring.datasource.password properties with your PostgreSQL configuration.
 
 **Run the Application:**
@@ -30,6 +31,7 @@ curl -X POST http://localhost:8080/api/books/seed
 ### API Documentation
 **1. Get All Books**
 Endpoint: GET /api/books
+
 Description: Retrieve a list of all books in the library.
 
 **Response:**
@@ -78,6 +80,7 @@ Not Found (404 Not Found):
 
 **2. Add a New Book**
 Endpoint: POST /api/books
+
 Description: Add a new book to the library.
 
 **Request:**
@@ -97,6 +100,7 @@ Description: Add a new book to the library.
 
 **3. Update a Book by ID**
 Endpoint: PUT /api/books/{id}
+
 Description: Update the details of a specific book.
 
 **Request:**
@@ -127,6 +131,7 @@ Success (200 OK):
 
 **4. Seed Database with Mock Data**
 Endpoint: POST /api/books/seed
+
 Description: Populate the database with sample book entries.
 
 **Response:**

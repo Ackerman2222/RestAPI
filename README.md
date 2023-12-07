@@ -39,6 +39,7 @@ Success (200 OK):
     "publicationYear": "1925-04-10",
     "genre": "Classic"
   },
+
   {
     "id": 2,
     "title": "To Kill a Mockingbird",
@@ -46,6 +47,7 @@ Success (200 OK):
     "publicationYear": "1960-07-11",
     "genre": "Fiction"
   },
+  
   {
     "id": 3,
     "title": "The Catcher in the Rye",
@@ -53,6 +55,7 @@ Success (200 OK):
     "publicationYear": "1951-07-16",
     "genre": "Coming-of-age"
   },
+  
   {
     "id": 4,
     "title": "1984",
@@ -60,6 +63,9 @@ Success (200 OK):
     "publicationYear": "1949-06-08",
     "genre": "Dystopian"
   },
+  // ... other books
+]
+
   // ... other books
 ]
 

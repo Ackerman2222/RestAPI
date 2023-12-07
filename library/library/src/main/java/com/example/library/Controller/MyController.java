@@ -53,4 +53,10 @@ public class MyController {
         bookservice.savebook(existingbook);
         return ResponseEntity.status(HttpStatus.OK).body(existingbook);
     }
+	
+	@PostMapping("/api/books/seed")
+    public ResponseEntity<String> seedData() {
+        bookservice.seedData();
+        return ResponseEntity.status(HttpStatus.OK).body("Mock data seeded successfully");
+    }
 }

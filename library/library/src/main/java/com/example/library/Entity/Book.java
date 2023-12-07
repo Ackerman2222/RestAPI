@@ -34,9 +34,8 @@ public class Book {
 	}
 
 	
-	public Book(Long id, String title, String author, String publicationYear, String genre) {
+	public Book(String title, String author, String publicationYear, String genre) {
 		super();
-		this.id = id;
 		this.title = title;
 		this.author = author;
 		this.publicationYear = publicationYear;

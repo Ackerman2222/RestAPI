@@ -31,6 +31,7 @@ Endpoint: GET /api/books
 Description: Retrieve a list of all books in the library.
 Response:
 Success (200 OK):
+```bash
 [
   {
     "id": 1,
@@ -65,10 +66,9 @@ Success (200 OK):
   },
   // ... other books
 ]
-
   // ... other books
 ]
-
+```
 Not Found (404 Not Found):
 "No books found"
 
@@ -76,6 +76,7 @@ Not Found (404 Not Found):
 Endpoint: POST /api/books
 Description: Add a new book to the library.
 Request:
+
 {
   "title": "The Catcher in the Rye",
   "author": "J.D. Salinger",
@@ -90,14 +91,17 @@ Response: Success (200 OK):
 Endpoint: PUT /api/books/{id}
 Description: Update the details of a specific book.
 Request:
+
 {
   "title": "Updated Title",
   "author": "Updated Author",
   "publicationYear": "2000-01-01",
   "genre": "Updated Genre"
 }
+
 Response:
 Success (200 OK):
+
 {
   "id": 1,
   "title": "Updated Title",
